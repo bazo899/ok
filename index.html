@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>sidebar</title>
+</head>
+   <meta charset="UTF-8">
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+
+
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<meta name="theme-color" content="red">
+
+
+
+
+<body>
+
+<div class="side"  id="sidebar">
+ <span  class="imga"  ><img src="moon.png"  id="icon"width="30px" > </span>
+ 
+	<button type="submit" onclick="w3_close()" class="clo">&times;</button>
+	
+	 <br><br>
+	<a href="#">about me</a>
+	<a href="#">contact me</a>
+	<a href="#">address me</a>
+</div>
+<div  class="OPEN">
+<button  onclick="w3_open()" style="font-size:30px;cursor:pointer" >&#9776;</button>
+</div>
+    
+</body>
+
+<br><br>
+<!-- ✔️✔️✔️ -->
+
+<form class="F">
+
+
+<input minlength="1" maxlength="2" placeholder="روژ" type="number"  id="day"> 
+
+
+<input maxlength="2" placeholder="هەیڤ" type="number" name=""  id="month">
+
+<input maxlength="4" placeholder="ساڵ" type="number"  name="" id="year"><br>
+
+     <button class="age">کلیک کرن</button> 
+
+<span class="age">کلیک کرن</span>
+
+</form >
+
+<script>
+function w3_open()
+{
+document.getElementById("sidebar").style.width="170px";
+
+document.getElementById("sidebar").style.marginleft="170px";
+
+document.getElementById("sidebar").style.height="700px";
+}
+function w3_close()
+{
+document.getElementById("sidebar").style.width="0px";
+}
+
+
+
+
+
+
+
+
+
+
+var icon =document.getElementById('icon');
+    
+    icon.onclick=function (){
+        
+       document.body.classList.toggle("dark-theme");
+        
+       if(document.body.classList.contains("dark-theme"))
+      {
+      
+      icon.src="sun.png";
+      
+      }
+      else
+{
+icon.src="moon.png";
+}
+        
+    }
+
+
+
+
+
+
+
+
+<!-- ok -->
+
+<!-- ✔️✔️✔️✔️✔️✔️ -->
+
+
+var date=new Date();
+var x=date.getDay();
+
+console.log(x);
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+</html>
+
+
+
+
+
+ 
+ 
+
+ 
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
